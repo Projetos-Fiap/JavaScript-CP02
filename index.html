@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="./validacoes.js"></script>
+    <title>CP02 - JS</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <form method="post" action="./deuCerto.html" name="form" onsubmit="return validaCampoVazio()">
+                <div>
+                    <label for="firstName">Primeiro Nome:</label><br>
+                    <input type="text" name="firstName" id="firstName" class="firstName" oninput="validaFirstName()">
+                    <p id="errorFirstName"></p>
+                </div>
+                <div>
+                    <label for="secondName">Segundo Nome:</label><br>
+                    <input type="text" name="secondName" id="secondName" class="secondName" oninput="validaSecondName()">
+                    <p id="errorSecondName"></p>
+                </div>
+                <div>
+                    <label for="email">Email:</label><br>
+                    <input type="text" name="email" id="email" class="email" oninput="validaEmail()">
+                    <p id="errorEmail"></p>
+                </div>
+                <div>
+                    <label for="password">Senha:</label><br>
+                    <input type="password" name="password" id="password" class="password" oninput="validaPassword()">
+                    <p id="errorPassword"></p>
+                </div>
+                <div>
+                    <label for="confirmPassword">Confirmar Senha:</label><br>
+                    <input type="password" name="confirmPassword" id="confirmPassword" class="confirmPassword" oninput="validaConfirmPassword()">
+                    <p id="errorConfirmPassword"></p>
+                </div>
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
