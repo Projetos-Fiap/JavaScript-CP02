@@ -25,22 +25,28 @@ function validaSecondName(){
 
 function validaEmail(){
     let value = document.forms["form"]["email"].value;
-    let element = document.querySelector('.secondName');
+    let element = document.querySelector('.email');
     if (value.length < 5){
         document.getElementById("errorEmail").innerHTML = "Mínimo de 5 dígitos"
+        element.style.cssText  = "border-style: solid;border-width: 3px;border-color: red;";
     } else if(!value.includes("@")){
         document.getElementById("errorEmail").innerHTML = "O caracter @ é necessário"
+        element.style.cssText  = "border-style: solid;border-width: 3px;border-color: red;";
     } else {
         document.getElementById("errorEmail").innerHTML = ""
+        element.style.cssText  = "";
     }
 }
 
 function validaPassword(){
     let value = document.forms["form"]["password"].value;
+    let element = document.querySelector('.password');
     if(value.length < 6 || value.length > 8){
         document.getElementById("errorPassword").innerHTML = "A senha deve ter entre 6 e 8 caracteres"
+        element.style.cssText  = "border-style: solid;border-width: 3px;border-color: red;";
     } else {
         document.getElementById("errorPassword").innerHTML = ""
+        element.style.cssText  = "";
     }
 }
 
