@@ -1,7 +1,15 @@
-body {
-    background-color: #fffff2;
-    
+.body {
+    background-color: blanchedalmond;
     padding-right: 10px;
+}
+
+.switch {
+    position: fixed;
+    top: 50px;
+    left: 100px;
+    z-index: 1;
+    height: 70px;
+    width: 70px;
 }
 
 .container {
@@ -25,8 +33,9 @@ body {
     height: 80%;
     border-style: solid;
     border-width: 1px;
-    background-color: #fffff2;
+    background-color: blanchedalmond;
     border-radius: 50px;
+    color: black;
 }
 
 form {
